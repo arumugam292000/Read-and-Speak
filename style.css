@@ -81,3 +81,91 @@ select{
     background-position-x: calc(100% - 20px);
     background-position-y: 20px;
 }
+/* Target devices with a maximum width of 767px (typical for mobile devices) */
+@media(min-width:300px) and (max-width:600px){
+    /* Your styles for mobile devices go here */
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        box-sizing: border-box;
+    }
+    
+    .hero{
+        width: 50%;
+        min-height: 50vh;
+        background: linear-gradient(45deg, #010758, #490d61);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: white;
+    }
+    
+    .hero h1{
+        font-size: 23px;
+        font-weight: 250;
+        margin-top: -20px;
+        margin-bottom: 20px;
+    }
+    .hero h1 span{
+        color: #ff2963;
+    }
+    
+    textarea{
+        width: 100px;
+        height: 40px;
+        background: #403d84;
+        color: white;
+        font-size: 7px;
+        border: 0;
+        outline: 0;
+        padding: 10px;
+        border-radius: 5px;
+        resize: none;
+        margin-bottom: 15px;
+    }
+    textarea::placeholder{
+        font-size: 8px;
+        color: #ddd;
+    }
+    .row{
+        width: 100px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    button{
+        background: #ff2963;
+        color: white;
+        font-size: 8px;
+        padding: 5px 15px;
+        border-radius: 15px;
+        border: 0;
+        outline: 0;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+    }
+    button img{
+    width: 10px;
+    margin-right: 5px;
+    }
+    select{
+        flex: 1;
+        color: white;
+        background: #403d84;
+        height: 25px;
+        padding: 0 10px;
+        outline: 0;
+        border: 0;
+        border-radius: 17px;
+        appearance: none;
+        background-image: url("./download\ \(1\).png");
+        background-repeat: no-repeat;
+        background-size: 13px;
+        background-position-x: calc(50% - 10px);
+        background-position-y: 10px;
+    }
+  }
+  
